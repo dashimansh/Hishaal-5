@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #ffb6c1, #ffe4e1, #fff0f5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.wrapper {
+  text-align: center;
+  color: #333;
+}
+
+.emoji {
+  font-size: 8rem;
+  animation: bounce 1.5s ease-in-out infinite;
+  text-shadow: 0 0 20px rgba(255, 192, 203, 0.7);
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 20px;
+  color: #ff1493;
+  text-shadow: 0 0 10px rgba(255, 20, 147, 0.4);
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 10px #ff69b4, 0 0 20px #ff1493; }
+  to { text-shadow: 0 0 20px #ff69b4, 0 0 40px #ff1493; }
+}
+
+.message {
+  font-size: 1.2rem;
+  color: #444;
+  margin-top: 10px;
+  opacity: 0.9;
+}
+
+.back-btn {
+  display: inline-block;
+  margin-top: 40px;
+  text-decoration: none;
+  background-color: #ff69b4;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.back-btn:hover {
+  background-color: #ff1493;
+  transform: scale(1.05);
+}
